@@ -1,0 +1,47 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/rocks/protos/Rock17cm.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.401557583354252 0.21286882379431876 -0.8907515765392259 2.259272157222289
+  position 1.8507300847533326 2.8072478844890947 4.457639214832022
+}
+TexturedBackground {
+  texture "music_hall"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+E-puck {
+  hidden position_0_0 645.1583306928094
+  hidden position_0_1 722.5210616466051
+  hidden linearVelocity_0 -0.005227208651440037 -0.013384345391099657 -2.9564411622422593e-06
+  hidden angularVelocity_0 0.006229045809534883 -0.0026098771529034703 0.5694377781814823
+  hidden rotation_1 0 1 0 4.273429360491566
+  hidden linearVelocity_1 0.0001193104811271491 0.0003959375386800236 -2.3780698107377211e-07
+  hidden angularVelocity_1 -0.08567640594219733 0.03197423953096439 0.5695343018287718
+  hidden rotation_2 0 1 0 6.2379366281322
+  hidden linearVelocity_2 -0.010604158050370028 -0.027199942991510906 -1.3533965773662363e-06
+  hidden angularVelocity_2 1.425066479507579 -0.5550420224616003 0.5710880179448067
+  translation -0.9609264366955625 0.07183889574983021 -6.438648000328846e-05
+  rotation -0.0007541264840132644 -0.0005364939441474198 -0.9999995717336554 1.9303647521374545
+}
+Rock17cm {
+  translation 0.33 -0.4 0
+}
+Rock17cm {
+  translation -0.36 -0.37 0
+  name "rock 17 cm(2)"
+}
+Rock17cm {
+  translation -0.6 0.61 0
+  name "rock 17 cm(1)"
+}

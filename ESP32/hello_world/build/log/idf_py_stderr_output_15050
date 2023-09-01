@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/__main__.py", line 9, in <module>
+    esptool._main()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 1072, in _main
+    main()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 677, in main
+    esp = esp or get_default_connected_device(
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/__init__.py", line 961, in get_default_connected_device
+    _esp.connect(before, connect_attempts)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 647, in connect
+    last_error = self._connect_attempt(reset_strategy, mode)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/loader.py", line 532, in _connect_attempt
+    reset_strategy()  # Reset the chip to bootloader (download mode)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/reset.py", line 100, in __call__
+    self._setRTS(False)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esptool/reset.py", line 40, in _setRTS
+    self.port.setRTS(state)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/serial/serialutil.py", line 600, in setRTS
+    self.rts = value
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/serial/serialutil.py", line 463, in rts
+    self._update_rts_state()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/serial/serialposix.py", line 708, in _update_rts_state
+    fcntl.ioctl(self.fd, TIOCMBIC, TIOCM_RTS_str)
+OSError: [Errno 71] Protocol error
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  /home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/bin/python;;/home/mr-cheng/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3
+  failed.
+
+
+

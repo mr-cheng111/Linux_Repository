@@ -1,0 +1,3 @@
+/home/mr-cheng/Linux_Repository/Cpp/OpenCV/Test/build/CMakeFiles/rebuild_cache.dir
+/home/mr-cheng/Linux_Repository/Cpp/OpenCV/Test/build/CMakeFiles/edit_cache.dir
+/home/mr-cheng/Linux_Repository/Cpp/OpenCV/Test/build/CMakeFiles/Test.dir

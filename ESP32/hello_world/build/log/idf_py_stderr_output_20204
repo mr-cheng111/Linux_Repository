@@ -1,0 +1,18 @@
+[0;33m--- idf_monitor on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esp_idf_monitor/base/stoppable_thread.py", line 47, in _run_outer
+    self.run()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/esp_idf_monitor/base/serial_reader.py", line 55, in run
+    self.serial.open()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/serial/serialposix.py", line 338, in open
+    self._update_rts_state()
+  File "/home/mr-cheng/.espressif/python_env/idf5.2_py3.8_env/lib/python3.8/site-packages/serial/serialposix.py", line 708, in _update_rts_state
+    fcntl.ioctl(self.fd, TIOCMBIC, TIOCM_RTS_str)
+OSError: [Errno 71] Protocol error
+[0m

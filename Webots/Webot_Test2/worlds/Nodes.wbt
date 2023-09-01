@@ -1,0 +1,65 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.25296821566638317 0.005600759566862579 0.9674583780994613 3.0079237591332113
+  position 0.0955933562764199 -0.013274068009370005 0.06475770691307194
+}
+Floor {
+  size 2 2
+}
+TexturedBackground {
+  texture "music_hall"
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation 0 1 0.05
+  children [
+    DEF Wall Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.6 0.3
+        metalness 0
+      }
+      geometry Box {
+        size 2 0.05 0.1
+      }
+    }
+  ]
+  name "Wall2"
+  recognitionColors [
+    0.2 0 0
+  ]
+}
+Solid {
+  translation 0 -1 0.05
+  children [
+    USE Wall
+  ]
+  name "Wall3"
+}
+Solid {
+  translation 1 0 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    USE Wall
+  ]
+  name "Wall4"
+}
+Solid {
+  translation -1 0 0.05
+  rotation 2.3464099999870814e-06 2.3464099999870814e-06 0.9999999999944944 1.5708
+  children [
+    USE Wall
+  ]
+  name "Wall1"
+}
+E-puck {
+  controller "PID_controller"
+}
