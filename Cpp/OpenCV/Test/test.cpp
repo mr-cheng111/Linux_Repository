@@ -6,7 +6,7 @@ using namespace cv;
 int main(int argc,char **argv)
 {
     Mat image;
-    image = imread("/home/mr-cheng/Linux_Repository/Cpp/OpenCV/Test/Test_Pic.jpg");
+    image = imread("Test_Pic.jpg");
     namedWindow("Display Image");
     resize(image,image,Size_<double>(680,480));
     imshow("Display Image",image);

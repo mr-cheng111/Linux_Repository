@@ -5,8 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/local/include",
-                "/usr/local/include/opencv4",
-                "/usr/local/include/opencv4/opencv2"
+                "/home/mr-cheng/Bags/Opencv/opencv-4.10.0/install/include/opencv4",
+                "/home/mr-cheng/Bags/Opencv/opencv-4.10.0/install/include/opencv4/opencv2"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
@@ -16,8 +16,8 @@
             "configurationProvider": "ms-vscode.makefile-tools",
             "browse": {
                 "path": [
-                    "/usr/local/include/opencv4",
-                    "/usr/local/include/opencv4/opencv2"
+                        "/home/mr-cheng/Bags/Opencv/opencv-4.10.0/install/include/opencv4",
+                        "/home/mr-cheng/Bags/Opencv/opencv-4.10.0/install/include/opencv4/opencv2"
                 ]
             }
         }
